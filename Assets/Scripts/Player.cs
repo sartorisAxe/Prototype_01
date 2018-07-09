@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     #region Variables
+    public Animator animator;
 
     #endregion
 
@@ -12,7 +13,7 @@ public class Player : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        Debug.Log("Yay! I working");
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -20,8 +21,15 @@ public class Player : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Fire!");
+            Debug.Log("Fire!");            
+            AttackAnimation();
         }
+    }
+
+    void AttackAnimation()
+    {
+        //set animation of the attack
+        animator.SetTrigger("Attack");
     }
     #endregion
 
