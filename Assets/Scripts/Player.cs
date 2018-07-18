@@ -44,7 +44,6 @@ public class Player : MonoBehaviour
 
             m_rigidbody.velocity = new Vector3(0, 0, 0);
 
-
         }
 
         else if (Input.GetKeyDown(KeyCode.Mouse1))
