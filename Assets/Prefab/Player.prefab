@@ -292,9 +292,10 @@ GameObject:
   - component: {fileID: 4734565521574664}
   - component: {fileID: 50675339769567964}
   - component: {fileID: 70352024258767892}
+  - component: {fileID: 114439414189121220}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1578,7 +1579,7 @@ Animator:
   m_GameObject: {fileID: 1745577612936522}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7497b63b19dca604fa977ded2127639d, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffca7d8cd9d77da48b6340c33b67b238, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1597,6 +1598,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6987b2e5276164fa9934a70aa20d11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114439414189121220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1378210094040856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e981ee5f7b29434081abfaa10a1f056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 40
+  m_SpriteGroup: []
+  Once_Attack: 0
+  sortingOrder: 0
+  sortingOrderOrigine: 0
 --- !u!212 &212032079840621814
 SpriteRenderer:
   m_ObjectHideFlags: 1
